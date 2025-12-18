@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 Shyam0129
+Copyright (c) 2024 LinkedIn Automation Educational Project
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,44 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+IMPORTANT DISCLAIMER:
+
+This software is provided strictly for EDUCATIONAL and EVALUATION purposes only.
+
+By using this software, you acknowledge and agree that:
+
+1. This is a proof-of-concept demonstration of browser automation and anti-detection
+   techniques for learning purposes.
+
+2. Automated interaction with LinkedIn may violate LinkedIn's Terms of Service.
+
+3. The authors and contributors assume NO RESPONSIBILITY for any misuse of this
+   software or any consequences resulting from its use.
+
+4. This software should NOT be used for actual LinkedIn automation, commercial
+   purposes, or any activity that violates platform terms of service.
+
+5. Users are solely responsible for ensuring their use complies with all applicable
+   laws, regulations, and terms of service.
+
+6. This software is provided "as-is" without any warranties or guarantees.
+
+USE AT YOUR OWN RISK.
+
+The purpose of this project is to demonstrate:
+- Advanced browser automation techniques
+- Anti-detection and stealth engineering
+- Clean software architecture in Go
+- Best practices in automation development
+
+It is NOT intended for:
+- Production use
+- Commercial automation
+- Violating platform terms of service
+- Any unethical or illegal activities
+
+If you choose to use this software, you do so entirely at your own risk and
+responsibility.
