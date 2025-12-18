@@ -1,0 +1,107 @@
+browser:
+  headless: false
+  viewport:
+    width: 1920
+    height: 1080
+  user_agents:
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+stealth:
+  enable_mouse_movement: true
+  enable_random_scrolling: true
+  enable_human_typing: true
+  enable_mouse_hovering: true
+  enable_idle_breaks: true
+  
+  # Timing randomization (milliseconds)
+  action_delay:
+    min: 2000
+    max: 5000
+  
+  scroll_delay:
+    min: 1000
+    max: 3000
+  
+  typing_delay:
+    min: 100
+    max: 300
+  
+  think_time:
+    min: 3000
+    max: 8000
+  
+  # Idle breaks
+  idle_break:
+    min_duration_seconds: 60
+    max_duration_seconds: 180
+    frequency_actions: 20  # Take break every N actions
+
+rate_limits:
+  connections:
+    per_hour: 10
+    per_day: 50
+  
+  messages:
+    per_hour: 8
+    per_day: 30
+  
+  searches:
+    per_hour: 15
+    per_day: 100
+
+search:
+  targets:
+    - job_title: "Software Engineer"
+      location: "San Francisco Bay Area"
+      keywords: "Go, Backend, Distributed Systems"
+    
+    - job_title: "DevOps Engineer"
+      location: "Remote"
+      keywords: "Kubernetes, AWS, Terraform"
+  
+  max_results_per_search: 50
+  pagination_limit: 5
+
+connection:
+  send_note: true
+  note_templates:
+    - "Hi {{FirstName}}, I noticed your experience in {{Company}}. I'd love to connect and learn more about your work in {{Field}}."
+    - "Hello {{FirstName}}, I'm impressed by your background in {{Field}}. Would love to connect and exchange ideas!"
+    - "Hi {{FirstName}}, I see we share an interest in {{Field}}. Looking forward to connecting!"
+  
+  note_max_length: 300
+
+messaging:
+  enabled: true
+  delay_after_connection_hours: 24
+  
+  templates:
+    - "Thanks for connecting, {{FirstName}}! I'm really interested in {{Topic}}. Would love to hear your thoughts on it."
+    - "Hi {{FirstName}}, great to connect! I saw your post about {{Topic}} and found it insightful."
+  
+  follow_up_enabled: false
+
+scheduling:
+  active_hours:
+    start: 9  # 9 AM
+    end: 18   # 6 PM
+  
+  active_days:
+    - monday
+    - tuesday
+    - wednesday
+    - thursday
+    - friday
+  
+  timezone: "America/Los_Angeles"
+
+storage:
+  database_path: "./data/linkedin.db"
+  cookie_path: "./data/cookies.json"
+  
+logging:
+  level: "info"  # debug, info, warn, error
+  file: "./logs/automation.log"
+  console: true
